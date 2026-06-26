@@ -1,0 +1,119 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { Lock, Eye, EyeOff, Sparkles } from "lucide-react";
+
+const ADMIN_PASSWORD = "admin123";
+
+export default function LoginPage() {
+  const router = useRouter();
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  // If already logged in, redirect to dashboard
+  useEffect(() => {
+    const auth = localStorage.getItem("admin_auth");
+    if (auth === "true") {
+      router.push("/dashboard");
+    }
+  }, [router]);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    setTimeout(() => {
+      if (password === ADMIN_PASSWORD) {
+        localStorage.setItem("admin_auth", "true");
+        // Use location.replace to avoid back-button returning to login
+        window.location.replace("/dashboard");
+      } else {
+        setError("Invalid password. Try again.");
+        setLoading(false);
+      }
+    }, 300);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-[#0B1D3A] via-[#0D9488] to-[#0B1D3A] flex items-center justify-center p-4">
+      <div className="w-full max-w-sm">
+        <div className="text-center mb-8">
+          <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Sparkles className="w-8 h-8 text-white" />
+          </div>
+          <h1 className="text-2xl font-bold text-white font-[family-name:var(--font-poppins)]">
+            Admin Dashboard
+          </h1>
+          <p className="text-white/60 text-sm mt-2">
+            Classic Cleaning Services
+          </p>
+        </div>
+
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 shadow-2xl">
+          <div className="flex items-center gap-2 mb-5">
+            <Lock className="w-5 h-5 text-gray-400" />
+            <h2 className="font-semibold text-gray-800">Sign in to continue</h2>
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              Password
+            </label>
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter admin password"
+                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#0D9488]/30 focus:border-[#0D9488] transition-colors pr-12"
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              >
+                {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+              </button>
+            </div>
+          </div>
+
+          {error && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-600">
+              {error}
+            </div>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading || !password}
+            className="w-full py-3 bg-gradient-to-r from-[#0D9488] to-[#0B1D3A] text-white font-semibold rounded-xl hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {loading ? (
+              <span className="flex items-center justify-center gap-2">
+                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Signing in...
+              </span>
+            ) : (
+              "Sign In"
+            )}
+          </button>
+
+          <p className="text-xs text-gray-400 text-center mt-4">
+            Protected area. Authorized personnel only.
+          </p>
+          <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+            <p className="text-xs text-blue-600 font-medium">Default password: admin123</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
