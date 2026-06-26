@@ -229,8 +229,10 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-gradient-to-br from-teal to-blue rounded-lg flex items-center justify-center">
                     <Sparkles className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-lg font-bold text-navy">UNIQUE</span>
-                  <span className="text-lg font-bold text-teal"> CLEAN SERVICES</span>
+                  <div className="leading-tight">
+                    <span className="text-base font-bold text-navy">UNIQUE</span>
+                    <span className="text-base font-bold text-teal"> CLEAN SERVICES</span>
+                  </div>
                 </div>
                 <button
                   onClick={() => setMenuOpen(false)}
