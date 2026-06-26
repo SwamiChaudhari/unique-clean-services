@@ -230,8 +230,8 @@ export default function Navbar() {
                     <Sparkles className="w-4 h-4 text-white" />
                   </div>
                   <div className="leading-tight">
-                    <span className="text-base font-bold text-navy">UNIQUE</span>
-                    <span className="text-base font-bold text-teal"> CLEAN SERVICES</span>
+                    <span className="text-sm font-bold text-navy">UNIQUE</span>
+                    <span className="text-sm font-bold text-teal"> CLEAN SERVICES</span>
                   </div>
                 </div>
                 <button
