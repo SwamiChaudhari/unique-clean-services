@@ -123,13 +123,13 @@ export default function Navbar() {
               </div>
               <div className="leading-tight">
                 <span className="text-xl lg:text-[1.35rem] font-bold text-navy tracking-tight font-[family-name:var(--font-poppins)]">
-                  UNIQUE CLEAN SERVICES
+                  UNIQUE
                 </span>
                 <span className="text-xl lg:text-[1.35rem] font-bold text-teal tracking-tight font-[family-name:var(--font-poppins)]">
-                  {" "}Cleaning
+                  {" "}CLEAN SERVICES
                 </span>
                 <span className="hidden sm:block text-[10px] text-gray-400 -mt-1 tracking-widest uppercase font-medium">
-                  SERVICES
+                  PROFESSIONAL CLEANING
                 </span>
               </div>
             </Link>
@@ -229,7 +229,8 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-gradient-to-br from-teal to-blue rounded-lg flex items-center justify-center">
                     <Sparkles className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-lg font-bold text-navy">UNIQUE CLEAN SERVICES</span>
+                  <span className="text-lg font-bold text-navy">UNIQUE</span>
+                  <span className="text-lg font-bold text-teal"> CLEAN SERVICES</span>
                 </div>
                 <button
                   onClick={() => setMenuOpen(false)}
