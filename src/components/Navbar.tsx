@@ -94,7 +94,7 @@ export default function Navbar() {
               href={`https://wa.me/${business.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-green transition-colors"
+              className="hidden flex items-center gap-1.5 hover:text-green transition-colors"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp</span>
@@ -150,13 +150,6 @@ export default function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <a
-                href={PHONE_LINK}
-                className="flex items-center gap-2 text-navy font-semibold hover:text-blue transition-colors"
-              >
-                <Phone className="w-4 h-4 text-teal" />
-                <span>{business.phone.slice(0, 8)}...</span>
-              </a>
               <Link
                 href="/#quote"
                 className="bg-gradient-to-r from-orange to-gold hover:shadow-lg hover:shadow-orange-200 text-white font-bold px-6 py-3 rounded-xl transition-all hover:scale-[1.03] active:scale-[0.98]"
@@ -165,24 +158,8 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile: phone + hamburger */}
+            {/* Mobile: hamburger only */}
             <div className="flex lg:hidden items-center gap-2">
-              <a
-                href={PHONE_LINK}
-                className="w-10 h-10 flex items-center justify-center bg-navy rounded-xl text-white hover:bg-navy-light transition-colors"
-                aria-label="Call us"
-              >
-                <Phone className="w-4 h-4" />
-              </a>
-              <a
-                href={`https://wa.me/${business.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-emerald text-white rounded-xl hover:bg-emerald/90 transition-colors"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle className="w-4 h-4" />
-              </a>
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="w-10 h-10 flex items-center justify-center bg-orange rounded-xl text-white hover:bg-orange/90 transition-colors"
