@@ -30,7 +30,7 @@ export default function ReviewsPage() {
             transition={{ delay: 0.1 }}
             className="text-white/70 text-lg"
           >
-            See what our customers across Pune are saying about us.
+            See what our customers across Nashik are saying about us.
           </motion.p>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function ReviewsPage() {
             Join Our Happy Customers
           </h2>
           <p className="text-white/70 mb-8">
-            Book today and see why 1,500+ families trust Classic Cleaning.
+            Book today and see why 1,500+ families trust UNIQUE CLEAN SERVICES.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

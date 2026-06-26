@@ -10,7 +10,7 @@ export interface FAQ {
 export const faqs: FAQ[] = [
   {
     id: "1",
-    question: "How much does home cleaning cost in Pune?",
+    question: "How much does home cleaning cost in Nashik?",
     answer: `Our home cleaning starts from ${business.currencySymbol}1,499 for a standard cleaning and ${business.currencySymbol}2,499 for deep cleaning. Pricing depends on the size of your home and the type of cleaning required. Get a free quote by calling us at ${business.phone}.`,
     category: "Pricing",
   },
@@ -51,9 +51,9 @@ export const faqs: FAQ[] = [
   },
   {
     id: "7",
-    question: "What areas in Pune do you serve?",
+    question: "What areas in Nashik do you serve?",
     answer:
-      "We serve all major areas in Pune including Kothrud, Baner, Warje, Aundh, Bavdhan, Karve Nagar, Wakad, Pashan, Kharadi, Hinjewadi, and surrounding areas.",
+      "We serve all major areas in Nashik including CIDCO, Ambad, Uttam Nagar, Gangapur Road, College Road, Indira Nagar, Satpur, Panchavati, Canada Corner, Dwarka, Nashik Road, and surrounding areas.",
     category: "Service Areas",
   },
   {
@@ -72,7 +72,7 @@ export const faqs: FAQ[] = [
   },
   {
     id: "10",
-    question: "How do I book Classic Cleaning services?",
+    question: "How do I book UNIQUE CLEAN SERVICES services?",
     answer: `You can book us via:
 • Call: ${business.phone}
 • WhatsApp: Send your requirements to ${business.whatsapp}
@@ -91,7 +91,7 @@ Booking takes less than 2 minutes!`,
   },
   {
     id: "12",
-    question: "Is Classic Cleaning insured?",
+    question: "Is UNIQUE CLEAN SERVICES insured?",
     answer:
       "Yes, we are fully insured. We carry liability insurance to cover any accidental damage during cleaning. Your property is always protected when our team is working.",
     category: "Safety",

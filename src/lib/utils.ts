@@ -29,7 +29,7 @@ export function generateQuoteMessage(data: {
   area: string;
   name: string;
 }): string {
-  return `Hi Classic Cleaning! 👋
+  return `Hi UNIQUE CLEAN SERVICES! 👋
 
 I'd like to get a quote for:
 🏠 Service: ${data.service}

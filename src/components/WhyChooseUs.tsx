@@ -50,7 +50,7 @@ const benefits = [
     icon: IndianRupee,
     title: "Affordable Pricing",
     description:
-      "Transparent pricing with no hidden charges. Best rates in Pune.",
+      "Transparent pricing with no hidden charges. Best rates in Nashik.",
     color: "text-gold",
     bg: "bg-orange-light",
   },
@@ -58,7 +58,7 @@ const benefits = [
     icon: Clock,
     title: "Same Day Service",
     description:
-      "Need urgent cleaning? We offer same-day service across Pune.",
+      "Need urgent cleaning? We offer same-day service across Nashik.",
     color: "text-blue",
     bg: "bg-blue-light",
   },
@@ -89,7 +89,7 @@ export default function WhyChooseUs() {
             Why Choose Us
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
-            Pune&apos;s Most Trusted Cleaning Service
+            Nashik&apos;s Most Trusted Cleaning Service
           </h2>
           <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
             We don&apos;t just clean — we deliver peace of mind with every service.
@@ -144,7 +144,7 @@ export default function WhyChooseUs() {
                         1,500+ Happy Customers
                       </p>
                       <p className="text-white/70 text-xs">
-                        Trust Classic Cleaning for their homes & offices
+                        Trust UNIQUE CLEAN SERVICES for their homes & offices
                       </p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function WhyChooseUs() {
               className="absolute -top-4 -right-4 bg-gradient-to-r from-orange to-gold text-white rounded-2xl px-4 py-3 shadow-lg"
             >
               <div className="text-center">
-                <div className="text-2xl font-extrabold">4.8★</div>
+                <div className="text-2xl font-extrabold">4.4★</div>
                 <div className="text-[10px] font-medium opacity-90">
                   151+ Reviews
                 </div>

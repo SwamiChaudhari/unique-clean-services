@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/dashboard", "/dashboard/*", "/api/*"],
     },
-    sitemap: "https://classic-cleaning.vercel.app/sitemap.xml",
-    host: "https://classic-cleaning.vercel.app",
+    sitemap: "https://unique-clean-services.vercel.app/sitemap.xml",
+    host: "https://unique-clean-services.vercel.app",
   };
 }

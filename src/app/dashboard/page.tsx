@@ -85,7 +85,7 @@ export default function DashboardPage() {
             Welcome back, Admin!
           </h2>
           <p className="mt-1 text-sm text-white/70">
-            Here&apos;s what&apos;s happening with your Classic Cleaning website today.
+            Here&apos;s what&apos;s happening with your UNIQUE CLEAN SERVICES website today.
           </p>
         </div>
 

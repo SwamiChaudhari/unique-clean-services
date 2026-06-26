@@ -29,7 +29,7 @@ export default function Commercial() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
             <div className="absolute bottom-5 left-5">
               <div className="glass rounded-lg px-4 py-2 text-white text-sm font-medium">
-                🏢 Serving 50+ businesses in Pune
+                🏢 Serving 50+ businesses in Nashik
               </div>
             </div>
           </div>
@@ -59,13 +59,13 @@ export default function Commercial() {
 
             <div className="flex flex-wrap gap-3">
               <a
-                href="tel:07385169523"
+                href="tel:09623444499"
                 className="bg-gradient-to-r from-orange to-gold hover:shadow-lg text-white font-bold px-7 py-3.5 rounded-xl transition-all hover:scale-[1.03]"
               >
                 Get Commercial Quote
               </a>
               <a
-                href="https://wa.me/917385169523"
+                href="https://wa.me/919623444499"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-emerald hover:bg-emerald/90 text-white font-bold px-7 py-3.5 rounded-xl transition-all"

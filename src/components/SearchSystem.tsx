@@ -104,7 +104,7 @@ export default function SearchSystem() {
         searchResults.push({
           type: "area",
           title: a.name,
-          subtitle: `Pune · ${a.pincode}`,
+          subtitle: `Nashik · ${a.pincode}`,
           href: `/areas/${a.slug}`,
         });
       }

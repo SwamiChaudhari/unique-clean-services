@@ -123,7 +123,7 @@ export default function Navbar() {
               </div>
               <div className="leading-tight">
                 <span className="text-xl lg:text-[1.35rem] font-bold text-navy tracking-tight font-[family-name:var(--font-poppins)]">
-                  Classic
+                  UNIQUE CLEAN SERVICES
                 </span>
                 <span className="text-xl lg:text-[1.35rem] font-bold text-teal tracking-tight font-[family-name:var(--font-poppins)]">
                   {" "}Cleaning
@@ -229,7 +229,7 @@ export default function Navbar() {
                   <div className="w-8 h-8 bg-gradient-to-br from-teal to-blue rounded-lg flex items-center justify-center">
                     <Sparkles className="w-4 h-4 text-white" />
                   </div>
-                  <span className="text-lg font-bold text-navy">Classic Cleaning</span>
+                  <span className="text-lg font-bold text-navy">UNIQUE CLEAN SERVICES</span>
                 </div>
                 <button
                   onClick={() => setMenuOpen(false)}

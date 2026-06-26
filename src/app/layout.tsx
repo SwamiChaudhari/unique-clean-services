@@ -22,34 +22,34 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Classic Cleaning Services | Professional Cleaning In Pune",
+  title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
   description:
-    "Premium residential and commercial cleaning services in Pune. Background-verified staff, same-day service, 4.8★ rating. Get free quote now.",
+    "Premium residential and commercial cleaning services in Nashik. Background-verified staff, same-day service, 4.4★ rating. Get free quote now.",
   keywords: [
-    "cleaning services pune",
-    "house cleaning pune",
-    "deep cleaning pune",
-    "office cleaning pune",
-    "commercial cleaning pune",
-    "sofa cleaning pune",
-    "kitchen cleaning pune",
-    "best cleaning company pune",
+    "cleaning services nashik",
+    "house cleaning nashik",
+    "deep cleaning nashik",
+    "office cleaning nashik",
+    "commercial cleaning nashik",
+    "sofa cleaning nashik",
+    "kitchen cleaning nashik",
+    "best cleaning company nashik",
   ],
   openGraph: {
-    title: "Classic Cleaning Services | Professional Cleaning In Pune",
+    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
     description:
-      "Premium residential and commercial cleaning services in Pune. 4.8★ rating, 1500+ homes cleaned.",
+      "Premium residential and commercial cleaning services in Nashik. 4.4★ rating, 800+ homes cleaned.",
     type: "website",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Classic Cleaning Services | Professional Cleaning In Pune",
+    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
     description:
-      "Premium residential and commercial cleaning services in Pune. 4.8★ rating, 1500+ homes cleaned.",
+      "Premium residential and commercial cleaning services in Nashik. 4.4★ rating, 800+ homes cleaned.",
   },
   alternates: {
-    canonical: "https://classic-cleaning.vercel.app",
+    canonical: "https://unique-clean-services.vercel.app",
   },
   manifest: "/manifest.json",
 };

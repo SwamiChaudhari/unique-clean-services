@@ -1,63 +1,63 @@
 export const business = {
-  name: "Classic Cleaning",
-  fullName: "Classic Cleaning Services",
-  tagline: "Professional Cleaning Services In Pune You Can Trust",
+  name: "UNIQUE CLEAN SERVICES",
+  fullName: "UNIQUE CLEAN SERVICES",
+  tagline: "Professional Cleaning Services In Nashik You Can Trust",
   description:
-    "Premium residential and commercial cleaning services in Pune. Background-verified staff, eco-friendly products, same-day service available.",
+    "Premium residential and commercial cleaning services in Nashik. Background-verified staff, eco-friendly products, same-day service available.",
 
   // Contact
-  phone: "07385169523",
-  whatsapp: "917385169523",
-  email: "hello@classiccleaning.in",
+  phone: "096234 44499",
+  whatsapp: "919623444499",
+  email: "hello@uniquecleanservices.in",
 
   // Address
   address: {
-    flat: "Flat No.09, Marne Building",
-    area: "Left Bhusari Colony, Right Bhusari Colony",
-    locality: "Kothrud",
-    city: "Pune",
+    flat: "N-53, AJ/1, 4/1",
+    area: "Ambad - Uttam Nagar Road",
+    locality: "CIDCO",
+    city: "Nashik",
     state: "Maharashtra",
-    pincode: "411038",
-    full: "Flat No.09, Marne Building, Left Bhusari Colony, Right Bhusari Colony, Kothrud, Pune – 411038",
+    pincode: "422010",
+    full: "N-53, AJ/1, 4/1, Ambad - Uttam Nagar Road, CIDCO, Nashik, Maharashtra 422010",
   },
 
   // Hours
-  hours: "Open Daily, 8 AM – 11 PM",
+  hours: "Open 24 Hours",
   emergencyAvailable: true,
 
   // Social
   social: {
-    facebook: "https://facebook.com/classiccleaning",
-    instagram: "https://instagram.com/classiccleaning",
-    twitter: "https://twitter.com/classiccleaning",
-    linkedin: "https://linkedin.com/company/classiccleaning",
-    youtube: "https://youtube.com/@classiccleaning",
+    facebook: "https://facebook.com/uniquecleanservices",
+    instagram: "https://instagram.com/uniquecleanservices",
+    twitter: "https://twitter.com/uniquecleanservices",
+    linkedin: "https://linkedin.com/company/uniquecleanservices",
+    youtube: "https://youtube.com/@uniquecleanservices",
   },
 
   // Ratings
-  rating: 4.8,
-  reviewCount: 151,
-  homesCleaned: 1500,
-  yearsExperience: 5,
+  rating: 4.4,
+  reviewCount: 7,
+  homesCleaned: 800,
+  yearsExperience: 4,
 
   // SEO
   seo: {
-    title: "Classic Cleaning Services | Professional Cleaning In Pune",
+    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
     description:
-      "Premium residential and commercial cleaning services in Pune. Background-verified staff, same-day service, 4.8★ rating. Get free quote now.",
+      "Premium residential and commercial cleaning services in Nashik. Background-verified staff, same-day service, 4.4★ rating. Get free quote now.",
     keywords: [
-      "cleaning services pune",
-      "house cleaning pune",
-      "deep cleaning pune",
-      "office cleaning pune",
-      "commercial cleaning pune",
-      "sofa cleaning pune",
-      "kitchen cleaning pune",
-      "bathroom cleaning pune",
-      "move in move out cleaning pune",
-      "best cleaning company pune",
-      "professional cleaning pune",
-      "home cleaning services kothrud",
+      "cleaning services nashik",
+      "house cleaning nashik",
+      "deep cleaning nashik",
+      "office cleaning nashik",
+      "commercial cleaning nashik",
+      "sofa cleaning nashik",
+      "kitchen cleaning nashik",
+      "bathroom cleaning nashik",
+      "move in move out cleaning nashik",
+      "best cleaning company nashik",
+      "professional cleaning nashik",
+      "home cleaning services cidco",
     ],
     ogImage: "/og-image.jpg",
   },

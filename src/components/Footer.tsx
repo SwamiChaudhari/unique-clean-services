@@ -36,7 +36,7 @@ const companyLinks = [
 ];
 
 const areaLinks = [
-  { href: "/areas/kothrud", label: "Kothrud" },
+  { href: "/areas/cidco", label: "CIDCO" },
   { href: "/areas/baner", label: "Baner" },
   { href: "/areas/warje", label: "Warje" },
   { href: "/areas/aundh", label: "Aundh" },
@@ -58,7 +58,7 @@ export default function Footer() {
               </div>
               <div className="leading-tight">
                 <span className="text-xl font-bold text-white">
-                  Classic Cleaning
+                  UNIQUE CLEAN SERVICES
                 </span>
                 <span className="block text-[10px] text-white/40 tracking-widest uppercase">
                   SERVICES

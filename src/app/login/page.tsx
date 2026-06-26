@@ -49,7 +49,7 @@ export default function LoginPage() {
             Admin Dashboard
           </h1>
           <p className="text-white/60 text-sm mt-2">
-            Classic Cleaning Services
+            UNIQUE CLEAN SERVICES
           </p>
         </div>
 

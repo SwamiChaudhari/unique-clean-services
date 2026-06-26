@@ -9,7 +9,7 @@ import { services, formatPrice } from "@/config/services";
 export default function BottomActionBar() {
   const [activePanel, setActivePanel] = useState<"none" | "quote" | "chat">("none");
   const [chatMessages, setChatMessages] = useState<{ id: string; text: string; sender: "user" | "bot" }[]>([
-    { id: "1", text: "Hi! I'm Classic Assistant. I can help with pricing, services, areas & bookings. How can I help?", sender: "bot" },
+    { id: "1", text: "Hi! I'm Unique Assistant. I can help with pricing, services, areas & bookings. How can I help?", sender: "bot" },
   ]);
   const [chatInput, setChatInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -24,7 +24,7 @@ export default function BottomActionBar() {
       return `We offer:\n\n${services.map(s => `• ${s.title}`).join("\n")}\n\nAsk me about any service or WhatsApp +${business.whatsapp} for details.`;
     }
     if (lower.includes("area") || lower.includes("location")) {
-      return `We serve: Kothrud, Baner, Warje, Aundh, Bavdhan, Karve Nagar, Wakad, Pashan, Kharadi, Hinjewadi & more!\n\nNot sure? WhatsApp +${business.whatsapp} — we probably cover your area!`;
+      return `We serve: CIDCO, Ambad, Uttam Nagar, Gangapur Road, College Road, Indira Nagar, Satpur, Panchavati, Canada Corner, Dwarka, Nashik Road & more!\n\nNot sure? WhatsApp +${business.whatsapp} — we probably cover your area!`;
     }
     if (lower.includes("book") || lower.includes("schedule")) {
       return `To book, WhatsApp us at +${business.whatsapp}. We'll schedule a convenient slot. Available 8 AM – 11 PM daily!`;
@@ -61,7 +61,7 @@ export default function BottomActionBar() {
                 <div className="flex items-center gap-2">
                   {activePanel === "chat" ? <Bot className="w-5 h-5 text-teal-400" /> : <Sparkles className="w-5 h-5 text-orange" />}
                   <span className="text-white font-semibold text-sm">
-                    {activePanel === "chat" ? "Classic Assistant" : "Get Free Quote"}
+                    {activePanel === "chat" ? "Unique Assistant" : "Get Free Quote"}
                   </span>
                 </div>
                 <button onClick={() => setActivePanel("none")} className="text-gray-300 hover:text-white p-1">

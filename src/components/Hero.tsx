@@ -78,7 +78,7 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-5 font-[family-name:var(--font-poppins)]"
             >
-              1,500+ Pune Homes{" "}
+              1,500+ Nashik Homes{" "}
               <span className="gradient-text">Spotless.</span>{" "}
               Yours Next?
             </motion.h1>
@@ -89,7 +89,7 @@ export default function Hero() {
               className="text-base sm:text-lg text-white/70 mb-3 max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
               Background-verified professionals. Eco-friendly products.
-              Same-day service available. Serving 10+ areas across Pune.
+              Same-day service available. Serving 10+ areas across Nashik.
             </motion.p>
             <motion.p
               custom={3}
@@ -140,7 +140,7 @@ export default function Hero() {
                 { icon: Shield, text: "Fully Insured" },
                 { icon: CheckCircle2, text: "Background Verified" },
                 { icon: Clock, text: "Same Day Service" },
-                { icon: Award, text: "4.8★ Rated" },
+                { icon: Award, text: "4.4★ Rated" },
               ].map((badge, i) => (
                 <div
                   key={i}

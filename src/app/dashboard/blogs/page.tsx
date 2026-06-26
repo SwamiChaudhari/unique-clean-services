@@ -38,7 +38,7 @@ const emptyForm: BlogFormData = {
   excerpt: '',
   content: '',
   category: 'Guides',
-  author: 'Classic Cleaning Team',
+  author: 'UNIQUE CLEAN SERVICES Team',
   date: new Date().toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric',

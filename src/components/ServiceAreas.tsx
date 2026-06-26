@@ -13,10 +13,10 @@ export default function ServiceAreas() {
             Service Areas
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
-            Serving Across Pune
+            Serving Across Nashik
           </h2>
           <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-            From Kothrud to Hinjewadi — we cover all major areas in Pune.
+            From CIDCO to Nashik Road — we cover all major areas in Nashik.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function ServiceAreas() {
                   </h3>
                   <p className="text-gray-500 text-sm max-w-xs">
                     Covering all major residential and commercial areas across
-                    Pune
+                    Nashik
                   </p>
                   <div className="mt-4 flex flex-wrap justify-center gap-2">
                     {areas.slice(0, 5).map((area) => (

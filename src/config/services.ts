@@ -20,7 +20,7 @@ export const services: Service[] = [
     title: "Home Cleaning",
     slug: "home-cleaning",
     description:
-      "Complete home cleaning service including dusting, vacuuming, mopping, kitchen cleaning, bathroom cleaning, and surface sanitizing. Our trained professionals use eco-friendly products and advanced equipment to ensure every corner of your home is spotless. Perfect for maintaining a clean and healthy home environment for your family. Same-day service available across all Pune areas.",
+      "Complete home cleaning service including dusting, vacuuming, mopping, kitchen cleaning, bathroom cleaning, and surface sanitizing. Our trained professionals use eco-friendly products and advanced equipment to ensure every corner of your home is spotless. Perfect for maintaining a clean and healthy home environment for your family. Same-day service available across all Nashik areas.",
     shortDescription:
       "Complete home cleaning — dusting, vacuuming, mopping, kitchen & bathroom",
     icon: "Home",
@@ -139,7 +139,7 @@ export const services: Service[] = [
     title: "Office Cleaning",
     slug: "office-cleaning",
     description:
-      "Professional office cleaning for businesses of all sizes across Pune. We cover individual workstations, meeting rooms, common area sanitization, washroom deep cleaning, and pantry maintenance. Flexible scheduling available including after-hours and weekends to minimize disruption. Essential for maintaining employee health and workplace professionalism.",
+      "Professional office cleaning for businesses of all sizes across Nashik. We cover individual workstations, meeting rooms, common area sanitization, washroom deep cleaning, and pantry maintenance. Flexible scheduling available including after-hours and weekends to minimize disruption. Essential for maintaining employee health and workplace professionalism.",
     shortDescription:
       "Workstations, common areas, washrooms, pantry — flexible scheduling",
     icon: "Building2",

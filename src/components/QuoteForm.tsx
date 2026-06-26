@@ -109,7 +109,7 @@ export default function QuoteForm({
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
-            href="tel:07385169523"
+            href="tel:09623444499"
             className="inline-flex items-center justify-center gap-2 bg-navy text-white font-bold px-6 py-3.5 rounded-xl hover:bg-navy-light transition-all"
           >
             Call Us Now
@@ -256,7 +256,7 @@ export default function QuoteForm({
         >
           <input
             type="text"
-            placeholder="Area / Locality (e.g., Kothrud, Baner)"
+            placeholder="Area / Locality (e.g., CIDCO, Ambad)"
             value={form.area}
             onChange={(e) => update("area", e.target.value)}
             className={inputClasses}

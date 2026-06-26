@@ -67,28 +67,28 @@ export default function SeoSettingsPage() {
 
   // General tab state
   const [metaTitle, setMetaTitle] = useState(
-    'Classic Cleaning Services - Professional Cleaning Solutions'
+    'UNIQUE CLEAN SERVICES - Professional Cleaning Solutions'
   );
   const [metaDescription, setMetaDescription] = useState(
-    'Classic Cleaning Services offers professional residential and commercial cleaning solutions. Trusted, reliable, and affordable cleaning services near you.'
+    'UNIQUE CLEAN SERVICES offers professional residential and commercial cleaning solutions. Trusted, reliable, and affordable cleaning services near you.'
   );
   const [metaKeywords, setMetaKeywords] = useState(
     'cleaning services, house cleaning, office cleaning, deep cleaning, move-in cleaning'
   );
-  const [canonicalUrl, setCanonicalUrl] = useState('https://classiccleaning.com');
+  const [canonicalUrl, setCanonicalUrl] = useState('https://unique-clean-services.vercel.app');
   const [robotsTxt, setRobotsTxt] = useState(
-    'User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\n\nSitemap: https://classiccleaning.com/sitemap.xml'
+    'User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\n\nSitemap: https://unique-clean-services.vercel.app/sitemap.xml'
   );
 
   // Open Graph tab state
   const [ogTitle, setOgTitle] = useState(
-    'Classic Cleaning Services - Professional Cleaning Solutions'
+    'UNIQUE CLEAN SERVICES - Professional Cleaning Solutions'
   );
   const [ogDescription, setOgDescription] = useState(
-    'Classic Cleaning Services offers professional residential and commercial cleaning solutions.'
+    'UNIQUE CLEAN SERVICES offers professional residential and commercial cleaning solutions.'
   );
   const [ogImageUrl, setOgImageUrl] = useState(
-    'https://classiccleaning.com/images/og-image.jpg'
+    'https://unique-clean-services.vercel.app/images/og-image.jpg'
   );
   const [ogType, setOgType] = useState('website');
 
@@ -494,7 +494,7 @@ export default function SeoSettingsPage() {
                   <input
                     type="text"
                     readOnly
-                    value="https://classiccleaning.com/sitemap.xml"
+                    value="https://unique-clean-services.vercel.app/sitemap.xml"
                     className="flex-1 px-4 py-2.5 border border-gray-200 rounded-lg text-sm bg-gray-50 text-gray-600"
                   />
                   <button className="px-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors">

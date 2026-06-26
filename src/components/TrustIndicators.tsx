@@ -12,7 +12,7 @@ const stats = [
     bg: "bg-teal-light",
   },
   {
-    number: "4.8★",
+    number: "4.4★",
     label: "Customer Rating",
     icon: Star,
     color: "text-gold",

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props) {
   const service = getServiceBySlug(slug);
   if (!service) return { title: "Service Not Found" };
   return {
-    title: `${service.title} in Pune | ${business.name}`,
+    title: `${service.title} in Nashik | ${business.name}`,
     description: service.description,
   };
 }

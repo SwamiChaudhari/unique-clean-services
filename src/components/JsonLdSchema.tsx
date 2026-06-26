@@ -11,10 +11,10 @@ export default function JsonLdSchema() {
     "@type": "LocalBusiness",
     name: business.fullName,
     description: business.description,
-    image: "https://classic-cleaning.vercel.app/og-image.jpg",
+    image: "https://unique-clean-services.vercel.app/og-image.jpg",
     telephone: `+91${business.phone}`,
     email: business.email,
-    url: "https://classic-cleaning.vercel.app",
+    url: "https://unique-clean-services.vercel.app",
     address: {
       "@type": "PostalAddress",
       streetAddress: `${business.address.flat}, ${business.address.area}`,
@@ -25,10 +25,10 @@ export default function JsonLdSchema() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "18.5074",
-      longitude: "73.8076",
+      latitude: "19.9975",
+      longitude: "73.7898",
     },
-    openingHours: "Mo-Su 08:00-23:00",
+    openingHours: "Mo-Su 00:00-23:59",
     priceRange: "₹₹",
     aggregateRating: {
       "@type": "AggregateRating",
@@ -48,10 +48,10 @@ export default function JsonLdSchema() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://classic-cleaning.vercel.app" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://classic-cleaning.vercel.app/services" },
-      { "@type": "ListItem", position: 3, name: "Pricing", item: "https://classic-cleaning.vercel.app/pricing" },
-      { "@type": "ListItem", position: 4, name: "Contact", item: "https://classic-cleaning.vercel.app/contact" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://unique-clean-services.vercel.app" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://unique-clean-services.vercel.app/services" },
+      { "@type": "ListItem", position: 3, name: "Pricing", item: "https://unique-clean-services.vercel.app/pricing" },
+      { "@type": "ListItem", position: 4, name: "Contact", item: "https://unique-clean-services.vercel.app/contact" },
     ],
   };
 

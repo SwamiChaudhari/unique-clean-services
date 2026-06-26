@@ -58,7 +58,7 @@ export default function AboutPage() {
             transition={{ delay: 0.2 }}
             className="text-white/70 text-lg max-w-2xl mx-auto"
           >
-            Founded in {companyInfo.founded} in {business.address.locality}, Pune —
+            Founded in {companyInfo.founded} in {business.address.locality}, Nashik —
             on a mission to make professional cleaning accessible to every home
             and business.
           </motion.p>
@@ -86,22 +86,22 @@ export default function AboutPage() {
             <div>
               <span className="text-orange font-semibold text-sm tracking-wider uppercase">Our Story</span>
               <h2 className="text-3xl font-extrabold text-navy mt-2 mb-4 font-[family-name:var(--font-poppins)]">
-                From a Simple Idea to Pune&apos;s Trusted Cleaning Brand
+                From a Simple Idea to Nashik&apos;s Trusted Cleaning Brand
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Classic Cleaning Services was founded in {companyInfo.founded} with a
-                simple observation: families and businesses in Pune deserved
+                UNIQUE CLEAN SERVICES was founded in {companyInfo.founded} with a
+                simple observation: families and businesses in Nashik deserved
                 access to professional, reliable, and affordable cleaning
                 services — without the hassle of finding trustworthy local help.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Starting from a small team in {business.address.locality}, we&apos;ve
-                grown to serve {companyInfo.stats[3].value} areas across Pune, clean over{" "}
+                grown to serve {companyInfo.stats[3].value} areas across Nashik, clean over{" "}
                 {companyInfo.stats[0].value} homes, and earn {companyInfo.stats[1].value} five-star
                 reviews from happy customers.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Today, we&apos;re proud to be one of Pune&apos;s most trusted cleaning
+                Today, we&apos;re proud to be one of Nashik&apos;s most trusted cleaning
                 brands — known for quality, transparency, and customer satisfaction.
                 But our mission remains the same as day one: deliver a cleaner,
                 healthier space for every customer.
@@ -111,7 +111,7 @@ export default function AboutPage() {
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
-                  alt="Classic Cleaning team"
+                  alt="UNIQUE CLEAN SERVICES team"
                   width={800}
                   height={400}
                   className="w-full h-[400px] object-cover"
@@ -191,7 +191,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <span className="text-orange font-semibold text-sm tracking-wider uppercase">Our Team</span>
             <h2 className="text-3xl font-extrabold text-navy mt-2 font-[family-name:var(--font-poppins)]">
-              Meet the People Behind Classic Cleaning
+              Meet the People Behind UNIQUE CLEAN SERVICES
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -226,7 +226,7 @@ export default function AboutPage() {
             Ready to Experience the Difference?
           </h2>
           <p className="text-white/70 mb-8">
-            Join thousands of happy customers across Pune.
+            Join thousands of happy customers across Nashik.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

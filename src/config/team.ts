@@ -13,12 +13,12 @@ export interface TeamMember {
 export const team: TeamMember[] = [
   {
     id: "founder",
-    name: "Classic Cleaning Team",
+    name: "UNIQUE CLEAN SERVICES Team",
     role: "Founder & CEO",
     experience: "5+ years",
     avatar:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-    bio: "Started Classic Cleaning with a vision to bring professional, trustworthy cleaning services to every home in Pune.",
+    bio: "Started UNIQUE CLEAN SERVICES with a vision to bring professional, trustworthy cleaning services to every home in Nashik.",
     verified: true,
   },
   {
@@ -56,9 +56,9 @@ export const team: TeamMember[] = [
 export const companyInfo = {
   founded: "2021",
   mission:
-    "To provide every home and business in Pune with professional, reliable, and affordable cleaning services that exceed expectations.",
+    "To provide every home and business in Nashik with professional, reliable, and affordable cleaning services that exceed expectations.",
   vision:
-    "To become Pune's most trusted cleaning brand known for quality, transparency, and customer satisfaction.",
+    "To become Nashik's most trusted cleaning brand known for quality, transparency, and customer satisfaction.",
   values: [
     {
       title: "Trust & Transparency",
@@ -91,6 +91,6 @@ export const companyInfo = {
     { label: "Years Experience", value: "5+" },
     { label: "Areas Served", value: "10+" },
     { label: "Same-Day Service", value: "Available" },
-    { label: "Customer Rating", value: "4.8★" },
+    { label: "Customer Rating", value: "4.4★" },
   ],
 };

@@ -256,9 +256,9 @@ export default function ContactPage() {
                     <div className="w-14 h-14 bg-gradient-to-br from-teal to-blue rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
                       <MapPin className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-bold text-navy mb-1">Located in Kothrud, Pune</h3>
+                    <h3 className="font-bold text-navy mb-1">Located in CIDCO, Nashik</h3>
                     <p className="text-sm text-gray-500">
-                      Serving all areas across Pune
+                      Serving all areas across Nashik
                     </p>
                   </div>
                 </div>

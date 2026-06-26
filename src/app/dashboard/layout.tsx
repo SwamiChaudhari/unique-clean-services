@@ -64,7 +64,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0D9488]">
               <Sparkles className="h-4 w-4 text-white" />
             </div>
-            <span className="font-semibold text-lg">Classic Cleaning</span>
+            <span className="font-semibold text-lg">UNIQUE CLEAN SERVICES</span>
           </div>
           <button
             className="lg:hidden text-white/70 hover:text-white"
@@ -120,7 +120,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium truncate">Admin</p>
-              <p className="text-xs text-white/50 truncate">admin@classiccleaning.in</p>
+              <p className="text-xs text-white/50 truncate">admin@uniquecleanservices.in</p>
             </div>
             <button
               onClick={handleLogout}

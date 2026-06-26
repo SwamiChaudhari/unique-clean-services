@@ -22,7 +22,7 @@ export default function AreasPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-[family-name:var(--font-poppins)] mb-4"
           >
-            Serving All of <span className="gradient-text">Pune</span>
+            Serving All of <span className="gradient-text">Nashik</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ export default function AreasPage() {
             transition={{ delay: 0.1 }}
             className="text-white/70 text-lg mb-6"
           >
-            From Kothrud to Hinjewadi — we cover all major areas.
+            From CIDCO to Nashik Road — we cover all major areas.
           </motion.p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
@@ -119,7 +119,7 @@ export default function AreasPage() {
                 </div>
                 <h3 className="text-xl font-bold text-navy mb-2">10+ Areas Covered</h3>
                 <p className="text-gray-500 text-sm max-w-sm">
-                  Covering all major residential and commercial areas across Pune
+                  Covering all major residential and commercial areas across Nashik
                 </p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {areas.slice(0, 6).map((area) => (
@@ -149,7 +149,7 @@ export default function AreasPage() {
             </h2>
             <p className="text-white/70 mb-6">
               Call us or WhatsApp — we probably do! We&apos;re expanding coverage
-              across Pune every month.
+              across Nashik every month.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
