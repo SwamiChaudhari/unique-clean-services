@@ -160,7 +160,7 @@ export default function WhyChooseUs() {
               <div className="text-center">
                 <div className="text-2xl font-extrabold">4.4★</div>
                 <div className="text-[10px] font-medium opacity-90">
-                  151+ Reviews
+                  152+ Reviews
                 </div>
               </div>
             </motion.div>

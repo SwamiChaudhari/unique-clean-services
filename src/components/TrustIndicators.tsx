@@ -19,7 +19,7 @@ const stats = [
     bg: "bg-orange-light",
   },
   {
-    number: "151+",
+    number: "152+",
     label: "Google Reviews",
     icon: Award,
     color: "text-blue",
