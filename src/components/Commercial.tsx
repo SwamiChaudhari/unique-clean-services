@@ -29,7 +29,7 @@ export default function Commercial() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
             <div className="absolute bottom-5 left-5">
               <div className="glass rounded-lg px-4 py-2 text-white text-sm font-medium">
-                🏢 Serving 50+ businesses in Nashik
+                🏢 Serving 500+ businesses across Maharashtra
               </div>
             </div>
           </div>
@@ -43,9 +43,10 @@ export default function Commercial() {
               Professional Cleaning for Businesses
             </h2>
             <p className="text-gray-500 mb-6 leading-relaxed">
-              From small offices to large commercial spaces — we keep your
-              workplace clean, hygienic, and professional. Flexible scheduling
-              available including after-hours and weekends.
+              From small offices to large industrial facilities — we keep your
+              workplace clean, hygienic, and audit-ready. Dedicated account
+              management, SLA-driven delivery, and flexible scheduling including
+              after-hours and weekends across Nashik & Pune.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-3 mb-6">

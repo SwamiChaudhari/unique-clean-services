@@ -16,6 +16,8 @@ import { business } from "@/config/business";
 
 const NAV_LINKS = [
   { href: "/services", label: "Services" },
+  { href: "/industries", label: "Industries" },
+  { href: "/commercial", label: "Commercial" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/gallery", label: "Gallery" },

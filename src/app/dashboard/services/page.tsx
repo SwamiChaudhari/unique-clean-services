@@ -41,7 +41,7 @@ interface ServiceFormData {
   slug: string;
   description: string;
   shortDescription: string;
-  category: 'residential' | 'commercial' | 'specialty';
+  category: 'residential' | 'commercial' | 'industrial' | 'specialty' | 'facility-management';
   startingPrice: number;
   icon: string;
   image: string;
@@ -612,7 +612,9 @@ export default function ServicesManagement() {
                     >
                       <option value="residential">Residential</option>
                       <option value="commercial">Commercial</option>
+                      <option value="industrial">Industrial</option>
                       <option value="specialty">Specialty</option>
+                      <option value="facility-management">Facility Management</option>
                     </select>
                   </div>
 

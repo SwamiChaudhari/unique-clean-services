@@ -1,9 +1,9 @@
 export const business = {
   name: "UNIQUE CLEAN SERVICES",
   fullName: "UNIQUE CLEAN SERVICES",
-  tagline: "Professional Cleaning Services In Nashik You Can Trust",
+  tagline: "Professional Cleaning & Facility Management Services",
   description:
-    "Premium residential and commercial cleaning services in Nashik. Background-verified staff, eco-friendly products, same-day service available.",
+    "Maharashtra's trusted cleaning & facility management company serving homes, offices, industries, hospitals, schools, hotels, and housing societies across Nashik & Pune. Background-verified staff, eco-friendly chemicals, ISO-aligned processes, and 24/7 support.",
 
   // Contact
   phone: "096234 44499",
@@ -21,6 +21,9 @@ export const business = {
     full: "N-53, AJ/1, 4/1, Ambad - Uttam Nagar Road, CIDCO, Nashik, Maharashtra 422010",
   },
 
+  // Service cities (headquarters + service footprint)
+  citiesServed: ["Nashik", "Pune", "Mumbai", "Aurangabad", "Pimpri-Chinchwad"],
+
   // Hours
   hours: "Open 24 Hours",
   emergencyAvailable: true,
@@ -34,30 +37,46 @@ export const business = {
     youtube: "https://youtube.com/@uniquecleanservices",
   },
 
-  // Ratings
+  // Ratings & scale
   rating: 4.4,
-  reviewCount: 7,
-  homesCleaned: 800,
-  yearsExperience: 4,
+  reviewCount: 152,
+  homesCleaned: 1500,
+  businessesServed: 500,
+  yearsExperience: 5,
+  teamSize: 200,
 
   // SEO
   seo: {
-    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
+    title:
+      "UNIQUE CLEAN SERVICES | Cleaning & Facility Management In Maharashtra",
     description:
-      "Premium residential and commercial cleaning services in Nashik. Background-verified staff, same-day service, 4.4★ rating. Get free quote now.",
+      "Professional residential, commercial, industrial & facility management cleaning services in Nashik & Pune. Background-verified staff, eco-friendly chemicals, ISO-aligned processes. Get a free quote.",
     keywords: [
+      "cleaning services pune",
+      "commercial cleaning pune",
+      "office cleaning pune",
+      "deep cleaning pune",
+      "industrial cleaning pune",
+      "facility management pune",
+      "housekeeping services pune",
       "cleaning services nashik",
-      "house cleaning nashik",
-      "deep cleaning nashik",
-      "office cleaning nashik",
       "commercial cleaning nashik",
-      "sofa cleaning nashik",
-      "kitchen cleaning nashik",
-      "bathroom cleaning nashik",
-      "move in move out cleaning nashik",
-      "best cleaning company nashik",
-      "professional cleaning nashik",
-      "home cleaning services cidco",
+      "office cleaning nashik",
+      "deep cleaning nashik",
+      "facade cleaning pune",
+      "high rise cleaning pune",
+      "hospital cleaning pune",
+      "hotel cleaning pune",
+      "school cleaning pune",
+      "warehouse cleaning pune",
+      "post construction cleaning pune",
+      "water tank cleaning pune",
+      "marble polishing pune",
+      "carpet cleaning pune",
+      "sofa cleaning pune",
+      "amc cleaning contract pune",
+      "best cleaning company maharashtra",
+      "professional cleaning services maharashtra",
     ],
     ogImage: "/og-image.jpg",
   },

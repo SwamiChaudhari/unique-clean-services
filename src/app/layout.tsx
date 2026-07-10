@@ -22,31 +22,45 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
+  title:
+    "UNIQUE CLEAN SERVICES | Cleaning & Facility Management In Maharashtra",
   description:
-    "Premium residential and commercial cleaning services in Nashik. Background-verified staff, same-day service, 4.4★ rating. Get free quote now.",
+    "Professional residential, commercial, industrial & facility management cleaning services in Nashik & Pune. Background-verified staff, eco-friendly chemicals, ISO-aligned processes. Get a free quote.",
   keywords: [
+    "cleaning services pune",
+    "commercial cleaning pune",
+    "office cleaning pune",
+    "deep cleaning pune",
+    "industrial cleaning pune",
+    "facility management pune",
+    "housekeeping services pune",
     "cleaning services nashik",
-    "house cleaning nashik",
-    "deep cleaning nashik",
-    "office cleaning nashik",
     "commercial cleaning nashik",
-    "sofa cleaning nashik",
-    "kitchen cleaning nashik",
-    "best cleaning company nashik",
+    "office cleaning nashik",
+    "deep cleaning nashik",
+    "facade cleaning pune",
+    "hospital cleaning pune",
+    "hotel cleaning pune",
+    "warehouse cleaning pune",
+    "water tank cleaning pune",
+    "marble polishing pune",
+    "best cleaning company maharashtra",
+    "professional cleaning services maharashtra",
   ],
   openGraph: {
-    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
+    title:
+      "UNIQUE CLEAN SERVICES | Cleaning & Facility Management In Maharashtra",
     description:
-      "Premium residential and commercial cleaning services in Nashik. 4.4★ rating, 800+ homes cleaned.",
+      "Professional cleaning & facility management for homes, offices & industries in Nashik & Pune. 4.4★ rated, 1,500+ homes & 500+ businesses served.",
     type: "website",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UNIQUE CLEAN SERVICES | Professional Cleaning In Nashik",
+    title:
+      "UNIQUE CLEAN SERVICES | Cleaning & Facility Management In Maharashtra",
     description:
-      "Premium residential and commercial cleaning services in Nashik. 4.4★ rating, 800+ homes cleaned.",
+      "Professional cleaning & facility management for homes, offices & industries in Nashik & Pune. 4.4★ rated, 1,500+ homes & 500+ businesses served.",
   },
   alternates: {
     canonical: "https://unique-clean-services.vercel.app",

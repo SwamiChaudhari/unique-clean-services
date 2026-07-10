@@ -18,6 +18,10 @@ import {
   Menu,
   X,
   Sparkles,
+  Award,
+  Building2,
+  Wrench,
+  ShieldCheck,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -29,6 +33,11 @@ const navItems = [
   { name: 'Blogs', icon: FileText, href: '/dashboard/blogs' },
   { name: 'Offers', icon: Tag, href: '/dashboard/offers' },
   { name: 'FAQs', icon: HelpCircle, href: '/dashboard/faqs' },
+  { name: 'Industries', icon: Building2, href: '/dashboard/industries' },
+  { name: 'Certifications', icon: Award, href: '/dashboard/certifications' },
+  { name: 'Equipment', icon: Wrench, href: '/dashboard/equipment' },
+  { name: 'Case Studies', icon: FileText, href: '/dashboard/case-studies' },
+  { name: 'Safety', icon: ShieldCheck, href: '/dashboard/safety' },
   { name: 'SEO Settings', icon: Search, href: '/dashboard/seo' },
   { name: 'Analytics', icon: BarChart3, href: '/dashboard/analytics' },
 ];

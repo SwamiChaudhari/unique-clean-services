@@ -69,7 +69,7 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald" />
               </span>
               <span className="text-white/90 text-sm font-medium">
-                ⭐ {business.rating} Rating | {business.reviewCount}+ Reviews | {business.homesCleaned.toLocaleString()}+ Homes
+                ⭐ {business.rating} Rating | {business.reviewCount}+ Reviews | {business.businessesServed}+ Businesses
               </span>
             </motion.div>
 
@@ -78,9 +78,9 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-5 font-[family-name:var(--font-poppins)]"
             >
-              1,500+ Nashik Homes{" "}
-              <span className="gradient-text">Spotless.</span>{" "}
-              Yours Next?
+              Maharashtra's Trusted{" "}
+              <span className="gradient-text">Cleaning & Facility</span>{" "}
+              Management Partner
             </motion.h1>
 
             <motion.p
@@ -88,15 +88,16 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-base sm:text-lg text-white/70 mb-3 max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
-              Background-verified professionals. Eco-friendly products.
-              Same-day service available. Serving 10+ areas across Nashik.
+              Professional cleaning & facility management for homes, offices,
+              industries, hospitals, schools & housing societies. Background-verified
+              staff. Eco-friendly products. Serving Nashik & Pune.
             </motion.p>
             <motion.p
               custom={3}
               variants={fadeUpVariants}
               className="text-sm text-emerald font-semibold mb-6"
             >
-              Starting from ₹499 — 1,500+ homes cleaned. Yours next.
+              Trusted by 1,500+ homes & 500+ businesses across Maharashtra.
             </motion.p>
 
             {/* CTA buttons */}

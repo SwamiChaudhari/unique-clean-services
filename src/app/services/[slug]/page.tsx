@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { services, getServiceBySlug, formatPrice } from "@/config/services";
+import { getServiceContent } from "@/config/serviceContent";
+import { reviews } from "@/config/reviews";
 import { business } from "@/config/business";
-import { faqs } from "@/config/faq";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import QuoteForm from "@/components/QuoteForm";
@@ -12,6 +13,8 @@ import {
   ArrowRight,
   Clock,
   Shield,
+  Star,
+  Quote,
 } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -30,20 +33,45 @@ export async function generateMetadata({ params }: Props) {
   const service = getServiceBySlug(slug);
   if (!service) return { title: "Service Not Found" };
   return {
-    title: `${service.title} in Nashik | ${business.name}`,
+    title: `${service.title} in Nashik & Pune | ${business.name}`,
     description: service.description,
   };
 }
+
+const GENERIC_PROCESS = [
+  { step: "1", title: "Book", desc: "Call, WhatsApp, or fill the form" },
+  { step: "2", title: "Schedule", desc: "Pick a convenient date & time" },
+  { step: "3", title: "We Clean", desc: "Our team arrives with equipment" },
+  { step: "4", title: "Enjoy", desc: "Relax in your spotless space" },
+];
 
 export default async function ServicePage({ params }: Props) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
+  const content = getServiceContent(slug);
   const relatedServices = services
+    .filter((s) => s.id !== service.id && s.category === service.category)
+    .slice(0, 3);
+  const fallbackRelated = services
     .filter((s) => s.id !== service.id)
     .slice(0, 3);
-  const serviceFaqs = faqs.slice(0, 5);
+  const related = relatedServices.length ? relatedServices : fallbackRelated;
+  const serviceFaqs = content?.faqs ?? [];
+  const testimonials =
+    content?.testimonials ??
+    reviews
+      .filter((r) => r.visible)
+      .slice(0, 2)
+      .map((r) => ({
+        name: r.name,
+        role: `${r.service} · ${r.location}`,
+        quote: r.text,
+      }));
+  const process = content?.process ?? GENERIC_PROCESS;
+  const benefits = content?.benefits ?? [];
+  const gallery = content?.gallery ?? [];
 
   return (
     <main className="min-h-screen">
@@ -63,6 +91,9 @@ export default async function ServicePage({ params }: Props) {
               >
                 ← All Services
               </Link>
+              <span className="inline-block bg-white/10 text-teal text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider capitalize">
+                {service.category.replace("-", " ")}
+              </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-[family-name:var(--font-poppins)] mb-4">
                 {service.title}
               </h1>
@@ -122,6 +153,33 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Benefits */}
+      {benefits.length > 0 && (
+        <section className="py-16 lg:py-20 bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-10">
+              <span className="inline-block text-orange font-semibold text-sm tracking-wider uppercase mb-3">
+                Why Choose This Service
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
+                Key Benefits
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {benefits.map((b, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-3 bg-white rounded-xl p-5 border border-border"
+                >
+                  <CheckCircle2 className="w-5 h-5 text-emerald shrink-0 mt-0.5" />
+                  <span className="font-medium text-gray-700 text-sm">{b}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* What's Included */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -158,12 +216,7 @@ export default async function ServicePage({ params }: Props) {
             How It Works
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { step: "1", title: "Book", desc: "Call, WhatsApp, or fill the form" },
-              { step: "2", title: "Schedule", desc: "Pick a convenient date & time" },
-              { step: "3", title: "We Clean", desc: "Our team arrives with equipment" },
-              { step: "4", title: "Enjoy", desc: "Relax in your spotless space" },
-            ].map((item, i) => (
+            {process.map((item, i) => (
               <div key={i} className="text-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-teal to-blue rounded-2xl flex items-center justify-center mx-auto mb-3 text-white font-bold">
                   {item.step}
@@ -176,29 +229,126 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-extrabold text-navy font-[family-name:var(--font-poppins)] text-center mb-8">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-3">
-            {serviceFaqs.map((faq) => (
-              <div
-                key={faq.id}
-                className="bg-surface rounded-xl p-5 border border-border"
-              >
-                <h3 className="font-semibold text-navy text-sm mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
+      {/* Before & After Gallery */}
+      {gallery.length > 0 && (
+        <section className="py-16 lg:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-10">
+              <span className="inline-block text-orange font-semibold text-sm tracking-wider uppercase mb-3">
+                Before &amp; After
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
+                Real Results
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {gallery.map((g, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl overflow-hidden border border-border shadow-card"
+                >
+                  <div className="grid grid-cols-2">
+                    <div className="relative">
+                      <Image
+                        src={g.before}
+                        alt={`${g.caption} - before`}
+                        width={400}
+                        height={250}
+                        className="w-full h-48 object-cover"
+                      />
+                      <span className="absolute top-2 left-2 bg-navy/80 text-white text-[11px] font-bold px-2 py-1 rounded">
+                        BEFORE
+                      </span>
+                    </div>
+                    <div className="relative">
+                      <Image
+                        src={g.after}
+                        alt={`${g.caption} - after`}
+                        width={400}
+                        height={250}
+                        className="w-full h-48 object-cover"
+                      />
+                      <span className="absolute top-2 left-2 bg-emerald text-white text-[11px] font-bold px-2 py-1 rounded">
+                        AFTER
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-center text-sm text-gray-500 py-3">
+                    {g.caption}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {/* Testimonials */}
+      {testimonials.length > 0 && (
+        <section className="py-16 lg:py-24 bg-surface">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-10">
+              <span className="inline-block text-orange font-semibold text-sm tracking-wider uppercase mb-3">
+                Client Stories
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
+                What Our Clients Say
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {testimonials.map((t, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl p-6 border border-border shadow-card"
+                >
+                  <Quote className="w-8 h-8 text-teal mb-3" />
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    &quot;{t.quote}&quot;
+                  </p>
+                  <div className="flex items-center gap-1 mb-2">
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <Star
+                        key={s}
+                        className="w-4 h-4 text-gold fill-gold"
+                      />
+                    ))}
+                  </div>
+                  <div>
+                    <p className="font-bold text-navy text-sm">{t.name}</p>
+                    <p className="text-xs text-gray-500">{t.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQs */}
+      {serviceFaqs.length > 0 && (
+        <section className="py-16 lg:py-24 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl font-extrabold text-navy font-[family-name:var(--font-poppins)] text-center mb-8">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-3">
+              {serviceFaqs.map((faq, i) => (
+                <div
+                  key={i}
+                  className="bg-surface rounded-xl p-5 border border-border"
+                >
+                  <h3 className="font-semibold text-navy text-sm mb-2">
+                    {faq.q}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Related Services */}
       <section className="py-16 lg:py-20 bg-surface">
@@ -207,7 +357,7 @@ export default async function ServicePage({ params }: Props) {
             Other Services
           </h2>
           <div className="grid sm:grid-cols-3 gap-5">
-            {relatedServices.map((s) => (
+            {related.map((s) => (
               <Link
                 key={s.id}
                 href={`/services/${s.slug}`}
