@@ -12,85 +12,123 @@ export interface TeamMember {
 
 export const team: TeamMember[] = [
   {
-    id: "founder",
-    name: "UNIQUE CLEAN SERVICES Team",
+    id: "ceo",
+    name: "Facade Master Leadership Team",
     role: "Founder & CEO",
-    experience: "5+ years",
+    experience: "8+ years",
     avatar:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-    bio: "Started UNIQUE CLEAN SERVICES with a vision to bring professional, trustworthy cleaning services to every home in Nashik.",
+    bio:
+      "Founded FACADE MASTER with expertise in high-rise cleaning and building maintenance. Previously managed facade projects across 5 countries, bringing international standards to Indian commercial properties.",
     verified: true,
   },
   {
     id: "operations",
-    name: "Operations Manager",
+    name: "Operations Director",
     role: "Operations Head",
-    experience: "4+ years",
+    experience: "6+ years",
     avatar:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
-    bio: "Ensures every cleaning job meets our quality standards. Manages scheduling and team coordination.",
+    bio:
+      "Oversees all facade cleaning operations with focus on safety, quality control, and efficient project execution. Certified IRATA Level 3 supervisor.",
+    verified: true,
+  },
+  {
+    id: "technical",
+    name: "Technical Director",
+    role: "Head of Rope Access",
+    experience: "7+ years",
+    avatar:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+    bio:
+      "Leads the IRATA-certified rope access team. Specializes in complex facade structures and height-work safety protocols. Previously worked on supertall buildings in UAE.",
     verified: true,
   },
   {
     id: "quality",
-    name: "Quality Assurance",
-    role: "QA Lead",
-    experience: "3+ years",
+    name: "Quality Assurance Lead",
+    role: "QC Manager",
+    experience: "5+ years",
     avatar:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
-    bio: "Conducts quality checks and ensures customer satisfaction after every service.",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    bio:
+      "Ensures all cleaning meets British and international standards. Conducts pre/post inspection and maintains quality documentation for every project.",
     verified: true,
   },
   {
-    id: "lead-cleaner",
-    name: "Lead Cleaner",
-    role: "Senior Cleaning Professional",
+    id: "safety",
+    name: "Safety Compliance Officer",
+    role: "HSE Manager",
     experience: "6+ years",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-    bio: "Trains new team members and handles complex cleaning projects. Expert in deep cleaning.",
+      "https://images.unsplash.com/photo-1559839136-6aca1b3705e5?w=400&q=80",
+    bio:
+      "Full-time safety officer ensuring all operations comply with IRATA, ISO 45001, and local building safety codes. Conducts daily equipment checks and site audits.",
+    verified: true,
+  },
+  {
+    id: "project",
+    name: "Senior Project Manager",
+    role: "Project Lead",
+    experience: "5+ years",
+    avatar:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    bio:
+      "Manages multi-building projects and AMC contracts. Coordinates with facility managers, building owners, and developer teams for large-scale cleaning programs.",
     verified: true,
   },
 ];
 
 export const companyInfo = {
-  founded: "2021",
+  founded: "2018",
   mission:
-    "To provide every home and business in Nashik with professional, reliable, and affordable cleaning services that exceed expectations.",
+    "To provide commercial properties across India with world-class facade cleaning and maintenance using IRATA-certified techniques, advanced equipment, and uncompromising safety standards.",
   vision:
-    "To become Nashik's most trusted cleaning brand known for quality, transparency, and customer satisfaction.",
+    "To become India's most trusted facade maintenance partner for commercial, hospitality, and institutional properties.",
   values: [
     {
-      title: "Trust & Transparency",
+      title: "Safety First",
       description:
-        "No hidden charges. What you see is what you pay. All staff background verified.",
-      icon: "Shield",
+        "IRATA-certified procedures, full insurance, and zero-incident track record on every project.",
+      icon: "ShieldCheck",
     },
     {
-      title: "Quality First",
+      title: "Quality Excellence",
       description:
-        "We never cut corners. Every cleaning job goes through quality checks.",
+        "British standards adherence with documented processes, pre/post inspections, and satisfaction guarantee.",
       icon: "Award",
     },
     {
-      title: "Customer Satisfaction",
+      title: "Professional Expertise",
       description:
-        "Not happy? We re-clean for free. Your satisfaction is our priority.",
-      icon: "Heart",
+        "Years of experience on high-rise and complex facade structures with specialized equipment and techniques.",
+      icon: "Building",
     },
     {
-      title: "Eco-Friendly",
+      title: "Transparent Pricing",
       description:
-        "Safe chemicals, sustainable practices, minimal environmental impact.",
+        "No hidden charges. Detailed quotations with scope, timeline, and warranty clearly defined.",
+      icon: "IndianRupee",
+    },
+    {
+      title: "Eco-Conscious",
+      description:
+        "Environmentally safe chemicals, water recycling systems, and minimal environmental impact cleaning methods.",
       icon: "Leaf",
+    },
+    {
+      title: "Reliable Partnerships",
+      description:
+        "Long-term relationships with building owners, facility managers, and real estate developers.",
+      icon: "Handshake",
     },
   ],
   stats: [
-    { label: "Homes Cleaned", value: "1,500+" },
-    { label: "Happy Customers", value: "151+" },
-    { label: "Years Experience", value: "5+" },
-    { label: "Areas Served", value: "10+" },
-    { label: "Same-Day Service", value: "Available" },
-    { label: "Customer Rating", value: "4.4★" },
+    { label: "Buildings Cleaned", value: "850+" },
+    { label: "Client Satisfaction", value: "4.8★" },
+    { label: "Years Experience", value: "8+" },
+    { label: "IRATA Technicians", value: "25+" },
+    { label: "Service Cities", value: "6+" },
+    { label: "Insurance Coverage", value: "Full" },
   ],
 };

@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /dashboard/*
+Disallow: /api/*
+
+Host: https://unique-clean-services.vercel.app
+Sitemap: https://unique-clean-services.vercel.app/sitemap.xml

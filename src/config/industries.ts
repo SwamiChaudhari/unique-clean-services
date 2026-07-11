@@ -9,100 +9,92 @@ export interface Industry {
 // Industries We Serve — used on homepage + /industries page.
 export const industries: Industry[] = [
   {
-    id: "corporate-offices",
-    title: "Corporate Offices & IT Parks",
+    id: "commercial-buildings",
+    title: "Commercial Buildings",
     icon: "Building2",
     description:
-      "Daily housekeeping, washroom hygiene, pantry upkeep, and floor care for offices, co-working spaces, and IT campuses. Flexible after-hours scheduling to keep productivity uninterrupted.",
-    examples: ["IT Parks", "Corporate HQs", "Co-working Spaces", "BPO/KPO"],
+      "Facade and glass cleaning for corporate headquarters, business centers, and mixed-use commercial towers using BMU systems, cradles, and rope access techniques.",
+    examples: ["Corporate HQs", "Business Centers", "Mixed-Use Towers", "IT Parks"],
   },
   {
-    id: "residential",
-    title: "Residential Properties",
-    icon: "Home",
+    id: "high-rise-buildings",
+    title: "High-Rise Buildings",
+    icon: "Building",
     description:
-      "Trusted home cleaning for apartments, villas, and independent houses — from routine upkeep to deep seasonal cleaning, with child- and pet-safe products.",
-    examples: ["Apartments", "Villas", "Bungalows", "Independent Houses"],
+      "Specialized high-rise facade cleaning for towers 20-200+ meters using IRATA-certified rope access, BMU operations, and advanced height-work safety protocols.",
+    examples: ["Residential Towers", "Service Apartments", "Luxury High-Rises", "Supertalls"],
   },
   {
-    id: "housing-societies",
-    title: "Housing Societies & Townships",
-    icon: "Users",
+    id: "glass-facades",
+    title: "Glass Facades",
+    icon: "Window",
     description:
-      "End-to-end common-area cleaning, water tank disinfection, STP/WTP coordination, and waste management for gated communities and townships — with a resident portal.",
-    examples: ["Gated Communities", "Townships", "Apartments", "Clubs & Amenities"],
+      "Professional glass curtain wall cleaning for commercial buildings, retail stores, and atrium structures with streak-free deionized water systems.",
+    examples: ["Curtain Walls", "Atriums", "Skylight Systems", "Glass Canopies"],
+  },
+  {
+    id: "corporate-offices",
+    title: "Corporate Offices",
+    icon: "Building2",
+    description:
+      "Premium exterior cleaning for corporate office buildings, ensuring pristine appearance for client-facing facades and maintaining building aesthetics.",
+    examples: ["Office Towers", "Corporate Campuses", "Co-working Spaces", "BPO/KPO"],
+  },
+  {
+    id: "shopping-malls",
+    title: "Shopping Malls & Retail",
+    icon: "ShoppingBag",
+    description:
+      "Large-scale facade cleaning for shopping malls, retail outlets, and entertainment complexes during non-operational hours to avoid disruption.",
+    examples: ["Shopping Malls", "Retail Outlets", "Multiplexes", "Entertainment Zones"],
+  },
+  {
+    id: "hotels-resorts",
+    title: "Hotels & Resorts",
+    icon: "Hotel",
+    description:
+      "Luxury facade cleaning for hotels and resorts with attention to brand standards, guest privacy, and maintaining premium building aesthetics.",
+    examples: ["Luxury Hotels", "Resorts", "Serviced Apartments", "Banquet Halls"],
   },
   {
     id: "hospitals",
-    title: "Hospitals & Clinics",
+    title: "Hospitals & Healthcare",
     icon: "HeartPulse",
     description:
-      "Infection-control cleaning following CDC/WHO and NABH guidelines — OT/ICU terminal cleaning, biomedical waste segregation, and ATP-validated disinfection.",
-    examples: ["Hospitals", "Clinics", "Diagnostic Centres", "Dialysis Centres"],
+      "Specialized facade cleaning for healthcare facilities with infection control protocols, clean room standards, and compliance with healthcare regulations.",
+    examples: ["Hospitals", "Clinics", "Diagnostic Centers", "Medical Offices"],
   },
   {
-    id: "education",
-    title: "Schools & Colleges",
-    icon: "GraduationCap",
-    description:
-      "Child-safe cleaning for classrooms, labs, libraries, hostels, and play areas, with vacation deep-clean programs and mandatory staff background verification.",
-    examples: ["Schools", "Colleges", "Coaching Centres", "Hostels"],
-  },
-  {
-    id: "hospitality",
-    title: "Hotels & Restaurants",
-    icon: "Hotel",
-    description:
-      "Brand-standard housekeeping, public-area maintenance, kitchen stewarding, and 24/7 turnaround for hotels, resorts, serviced apartments, and banquets.",
-    examples: ["Hotels", "Resorts", "Restaurants", "Banquet Halls"],
-  },
-  {
-    id: "retail",
-    title: "Retail Stores & Malls",
-    icon: "ShoppingBag",
-    description:
-      "High-gloss floor care, entrance glass, display-case dusting, and fitting-room sanitation for showrooms, retail outlets, and shopping centres — before/after hours.",
-    examples: ["Showrooms", "Retail Outlets", "Malls", "Multiplexes"],
-  },
-  {
-    id: "warehouses",
-    title: "Warehouses & Logistics",
-    icon: "Package",
-    description:
-      "Large-format cleaning with ride-on scrubbers, racking dusting, loading-bay maintenance, and high-level structural cleaning for warehouses and distribution centres.",
-    examples: ["Warehouses", "DC Hubs", "Cold Storage", "Logistics Parks"],
-  },
-  {
-    id: "manufacturing",
-    title: "Manufacturing & Industrial Units",
+    id: "industrial-buildings",
+    title: "Industrial Buildings",
     icon: "Factory",
     description:
-      "Machinery degreasing, production-line cleaning, oil-spill response, and high-bay dusting with full safety protocols and MSDS-backed chemicals.",
-    examples: ["Factories", "Plants", "Pharma Units", "Food Processing"],
+      "Heavy-duty facade cleaning for manufacturing plants, factories, and industrial facilities with safety compliance and minimal operational disruption.",
+    examples: ["Manufacturing Plants", "Factories", "Pharma Units", "Warehouses"],
   },
   {
-    id: "commercial-buildings",
-    title: "Commercial & High-Rise Buildings",
-    icon: "Building",
+    id: "educational",
+    title: "Educational Institutions",
+    icon: "GraduationCap",
     description:
-      "Facade and glass cleaning via rope access, BMU, and cradles, plus lobby and common-area upkeep for commercial towers and high-rise complexes.",
-    examples: ["Commercial Towers", "High-Rises", "Business Parks", "Mixed-Use"],
+      "Campus-wide facade cleaning for schools, colleges, and universities with flexible scheduling during holidays and safety-certified staff.",
+    examples: ["Schools", "Colleges", "Universities", "Coaching Centers"],
   },
   {
     id: "government",
     title: "Government & Institutional",
     icon: "Landmark",
     description:
-      "Compliant housekeeping and sanitation for government offices, banks, courts, and public institutions with documented processes and audit trails.",
-    examples: ["Govt Offices", "Banks", "Courts", "Public Institutions"],
+      "Compliant facade maintenance for government buildings, banks, courts, and public institutions with documented processes and audit trails.",
+    examples: ["Government Offices", "Banks", "Courts", "Public Buildings"],
   },
   {
     id: "real-estate",
-    title: "Real Estate & Construction",
+    title: "Real Estate Developers",
     icon: "HardHat",
     description:
-      "Post-construction and handover cleaning, model-flat presentation cleaning, and facade cleanup for developers, builders, and contractors.",
-    examples: ["Builders", "Developers", "Contractors", "Model Flats"],
+      "Pre-handover facade cleaning and maintenance for builders, developers, and contractors to ensure pristine building presentation.",
+    examples: ["Builders", "Developers", "Contractors", "Project Handover"],
   },
 ];
 

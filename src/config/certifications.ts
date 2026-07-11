@@ -9,59 +9,67 @@ export interface Certification {
 export const certifications: Certification[] = [
   {
     id: "iso-9001",
-    title: "ISO 9001:2015 QMS",
+    title: "ISO 9001:2015 Quality",
     icon: "Award",
     description:
-      "Quality Management System certified processes for consistent, auditable service delivery across every site.",
+      "Quality Management certified for consistent, auditable facade cleaning service delivery.",
   },
   {
     id: "iso-14001",
     title: "ISO 14001 Environment",
     icon: "Leaf",
     description:
-      "Environmentally responsible operations with eco-friendly chemicals and waste-reduction protocols.",
+      "Environmentally responsible operations with eco-friendly chemicals and waste reduction.",
   },
   {
     id: "iso-45001",
     title: "ISO 45001 Safety",
     icon: "ShieldCheck",
     description:
-      "Occupational health & safety management ensuring worker and client-site safety on every job.",
+      "Occupational health & safety management ensuring worker and site safety.",
   },
   {
     id: "msme",
     title: "MSME Registered",
     icon: "BadgeCheck",
     description:
-      "Government-recognised MSME enterprise, eligible for compliant B2B and institutional engagements.",
+      "Government-recognised MSME enterprise eligible for institutional contracts.",
   },
   {
     id: "irata",
-    title: "IRATA Rope Access",
+    title: "IRATA Certified",
     icon: "Anchor",
     description:
-      "IRATA-certified rope-access technicians for safe high-rise facade and glass cleaning operations.",
+      "Fully IRATA-certified rope access team for safe high-rise facade operations.",
   },
   {
-    id: "fssai",
-    title: "FSSAI-Aligned Kitchen Cleaning",
-    icon: "UtensilsCrossed",
+    id: "ipaf",
+    title: "IPAF Certified",
+    icon: "Armchair",
     description:
-      "Food-safe, non-toxic cleaning for commercial kitchens with documentation for health inspections.",
+      "IPAF-certified operators for scissor lifts, boom lifts, and elevated work platforms.",
+    category: "safety",
   },
   {
-    id: "cibrc",
-    title: "CIB&RC Approved Chemicals",
-    icon: "FlaskConical",
+    id: "nebosh",
+    title: "NEBOSH Safety",
+    icon: "GraduationCap",
     description:
-      "Pest-control and disinfection using CIB&RC approved, scientifically validated formulations.",
+      "NEBOSH-certified safety officers ensuring compliance on every project.",
   },
   {
     id: "insured",
     title: "Fully Insured",
     icon: "FileCheck",
     description:
-      "Public liability and worker insurance coverage on every assignment for complete peace of mind.",
+      "Comprehensive public liability and worker insurance on all assignments.",
+  },
+  {
+    id: "mswc",
+    title: "MSWC Member",
+    icon: "Building",
+    description:
+      "Member of Maharashtra Safety & Welfare Council for construction safety.",
   },
 ];
 

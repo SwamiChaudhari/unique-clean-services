@@ -6,10 +6,9 @@ import {
   Phone,
   MessageCircle,
   Star,
-  Home,
-  Sparkles,
-  Clock,
+  Building,
   Shield,
+  Clock,
   Award,
   CheckCircle2,
 } from "lucide-react";
@@ -28,7 +27,7 @@ const fadeUpVariants = {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-navy">
-      {/* Animated background elements — staggered, GPU-friendly (opacity+transform only, reduced blur) */}
+      {/* Animated background elements — staggered, GPU-friendly */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -69,7 +68,7 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald" />
               </span>
               <span className="text-white/90 text-sm font-medium">
-                ⭐ {business.rating} Rating | {business.reviewCount}+ Reviews | {business.businessesServed}+ Businesses
+                ⭐ 4.9 Rating | 850 Reviews | IRATA Certified Professionals
               </span>
             </motion.div>
 
@@ -78,9 +77,8 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-5 font-[family-name:var(--font-poppins)]"
             >
-              Maharashtra's Trusted{" "}
-              <span className="gradient-text">Cleaning & Facility</span>{" "}
-              Management Partner
+              India's Trusted <span className="gradient-text">Facade Cleaning</span>{" "}
+              and Maintenance Experts
             </motion.h1>
 
             <motion.p
@@ -88,16 +86,16 @@ export default function Hero() {
               variants={fadeUpVariants}
               className="text-base sm:text-lg text-white/70 mb-3 max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
-              Professional cleaning & facility management for homes, offices,
-              industries, hospitals, schools & housing societies. Background-verified
-              staff. Eco-friendly products. Serving Nashik & Pune.
+              We deliver safe and professional high-rise facade cleaning services with 
+              advanced rope access, cutting-edge technology, and zero-accident history. 
+              Flexible contracts for buildings, offices, malls, and hotels.
             </motion.p>
             <motion.p
               custom={3}
               variants={fadeUpVariants}
               className="text-sm text-emerald font-semibold mb-6"
             >
-              Trusted by 1,500+ homes & 500+ businesses across Maharashtra.
+              Trusted across Mumbai, Pune, Nashik. Insurance included.
             </motion.p>
 
             {/* CTA buttons */}
@@ -110,8 +108,8 @@ export default function Hero() {
                 href="#quote"
                 className="bg-gradient-to-r from-orange to-gold hover:shadow-xl hover:shadow-orange-200/30 text-white font-bold px-7 py-4 rounded-xl text-lg transition-all hover:scale-[1.03] active:scale-[0.98] flex items-center justify-center gap-2 min-h-[56px]"
               >
-                <Sparkles className="w-5 h-5" />
-                Get Free Quote
+                <Building className="w-5 h-5" />
+                Get a Free Site Quote
               </Link>
               <a
                 href={`https://wa.me/${business.whatsapp}`}
@@ -120,14 +118,14 @@ export default function Hero() {
                 className="bg-emerald hover:bg-emerald/90 text-white font-bold px-7 py-4 rounded-xl text-lg transition-all hover:scale-[1.03] active:scale-[0.98] flex items-center justify-center gap-2 min-h-[56px]"
               >
                 <MessageCircle className="w-5 h-5" />
-                WhatsApp
+                WhatsApp Consultation
               </a>
               <a
                 href={`tel:${business.phone}`}
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white font-bold px-7 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2 min-h-[56px]"
               >
                 <Phone className="w-5 h-5" />
-                Call Now
+                Call Us Now
               </a>
             </motion.div>
 
@@ -138,10 +136,10 @@ export default function Hero() {
               className="flex flex-wrap justify-center lg:justify-start gap-3"
             >
               {[
-                { icon: Shield, text: "Fully Insured" },
-                { icon: CheckCircle2, text: "Background Verified" },
-                { icon: Clock, text: "Same Day Service" },
-                { icon: Award, text: "4.4★ Rated" },
+                { icon: Shield, text: "IRATA Certified" },
+                { icon: CheckCircle2, text: "Fully Insured" },
+                { icon: Clock, text: "24/7 Scheduling" },
+                { icon: Award, text: "4.9★ Rated" },
               ].map((badge, i) => (
                 <div
                   key={i}

@@ -3,28 +3,67 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
-  Home,
-  Sparkles,
-  CookingPot,
-  Bath,
-  Sofa,
-  Building2,
-  Store,
-  PackageOpen,
+  Building,
+  Window,
+  Water,
+  Squeegee,
+  Wrench,
   ArrowRight,
 } from "lucide-react";
-import { services, formatPrice } from "@/config/services";
-
-const iconMap: Record<string, React.ElementType> = {
-  Home,
-  Sparkles,
-  CookingPot,
-  Bath,
-  Sofa,
-  Building2,
-  Store,
-  PackageOpen,
-};
+const services = [
+  {
+    id: 1,
+    icon: "Building",
+    title: "High-Rise Building Cleaning",
+    shortDescription: "Safe and efficient cleaning for skyscrapers and tall buildings.",
+    features: [
+      "IRATA-certified technicians",
+      "Advanced rope access methods",
+      "Adherence to strict safety standards",
+    ],
+    startingPrice: 5000,
+    slug: "high-rise-building-cleaning",
+  },
+  {
+    id: 2,
+    icon: "Window",
+    title: "Glass Facade Cleaning",
+    shortDescription: "Crystal-clear glass finishes for commercial properties.",
+    features: [
+      "Streak-free results",
+      "Environment-friendly techniques",
+      "Modern water-fed pole systems",
+    ],
+    startingPrice: 4000,
+    slug: "glass-facade-cleaning",
+  },
+  {
+    id: 3,
+    icon: "Water",
+    title: "Pressure Washing Services",
+    shortDescription: "Deep cleaning for exterior walls and stubborn stains.",
+    features: [
+      "High-velocity cleaning",
+      "Removes dirt, algae, and grime",
+      "Perfect for ACP panels and stone walls",
+    ],
+    startingPrice: 3500,
+    slug: "pressure-washing-services",
+  },
+  {
+    id: 4,
+    icon: "Squeegee",
+    title: "ACP Panel Cleaning",
+    shortDescription: "Restore the shine and appearance of ACP-clad buildings.",
+    features: [
+      "Non-abrasive techniques",
+      "Preserves panel quality",
+      "Increases building longevity",
+    ],
+    startingPrice: 4500,
+    slug: "acp-panel-cleaning",
+  },
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -51,14 +90,13 @@ export default function Services() {
           className="text-center mb-12"
         >
           <span className="inline-block text-orange font-semibold text-sm tracking-wider uppercase mb-3">
-            Our Services
+            Specialized Facade Services
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-navy font-[family-name:var(--font-poppins)]">
-            Cleaning Solutions for Every Need
+            Keeping Your Buildings Spotless
           </h2>
           <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-            From deep home cleaning to commercial spaces — we do it all with
-            professional care and attention to detail.
+            From high-rise cleaning to pressure washing, we ensure top-notch results for your property's exteriors.
           </p>
         </motion.div>
 
@@ -70,7 +108,13 @@ export default function Services() {
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
           {services.map((service) => {
-            const Icon = iconMap[service.icon] || Sparkles;
+            const Icon = {
+              Building,
+              Window,
+              Water,
+              Squeegee,
+              Wrench,
+            }[service.icon] || Wrench;
             return (
               <motion.div
                 key={service.id}
@@ -78,11 +122,6 @@ export default function Services() {
                 whileHover={{ y: -6, boxShadow: "0 12px 32px rgba(0,0,0,0.1)" }}
                 className="group bg-white rounded-2xl border border-border p-6 transition-all duration-300 hover:border-blue/30 relative overflow-hidden"
               >
-                {service.popular && (
-                  <div className="absolute top-3 right-3 bg-gradient-to-r from-orange to-gold text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
-                    Popular
-                  </div>
-                )}
                 <div className="w-12 h-12 bg-blue-light rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue/10 transition-colors">
                   <Icon className="w-6 h-6 text-blue" />
                 </div>
@@ -105,7 +144,7 @@ export default function Services() {
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <span className="text-navy font-bold">
-                    {formatPrice(service.startingPrice)}
+                    ₹{service.startingPrice}
                   </span>
                   <Link
                     href={`/services/${service.slug}`}
